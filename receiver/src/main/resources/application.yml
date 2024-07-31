@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: receiver
+
+
+server:
+  port: 8102
+
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topic: channel-messages
+  consumer:
+    group-id: channel-group 
+    # The group ID is a string that uniquely identifies the group of consumer processes to which this consumer belongs. 
+    # By setting the group ID, we can ensure that the consumer is part of a group of consumers that share the load of consuming messages from a topic.
