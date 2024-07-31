@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sender
+
+server:
+  port: 8101
+
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topic: channel-messages
+  producer:
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
